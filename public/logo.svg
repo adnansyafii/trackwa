@@ -1,10 +1,16 @@
 <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="logoGradient" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOn some">
-      <stop offset="0%" stop-color="#2ea072" /> <!-- HSL 160 59% 45% approx -->
-      <stop offset="100%" stop-color="#39db9a" /> <!-- HSL 160 65% 52% approx -->
+    <linearGradient id="logoGradient" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2ea072" />
+      <stop offset="100%" stop-color="#39db9a" />
     </linearGradient>
   </defs>
   <rect width="100" height="100" rx="28" fill="url(#logoGradient)"/>
-  <path d="M72 48C72 61.2548 61.2548 72 48 72C43.5 72 39.3 70.8 35.7 68.7L25 72L28.3 61.3C26.2 57.7 25 53.5 25 49C25 35.7452 35.7452 25 49 25C62.2548 25 72 35.7452 72 49V48Z" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path 
+    d="M75 50C75 63.8071 63.8071 75 50 75C45.5 75 41.3 73.8 37.7 71.7L25 75L28.3 64.3C26.2 60.7 25 56.5 25 52C25 38.1929 36.1929 27 50 27C63.8071 27 75 38.1929 75 52V50Z" 
+    stroke="white" 
+    stroke-width="7" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+  />
 </svg>

@@ -13,7 +13,7 @@ const Footer = () => (
         {/* Brand Column */}
         <div className="lg:col-span-5 pr-4">
           <Link to="/" className="flex items-center gap-2 mb-6 hover:opacity-80 transition-opacity outline-none inline-flex">
-            <img src="/logo.svg" alt="TrackWA Logo" className="w-10 h-10 pointer-events-none shadow-lg shadow-primary/20 rounded-xl" />
+            <img src="/logo.svg" alt="TrackWA Logo" className="w-10 h-10 shadow-lg shadow-primary/20 rounded-xl" />
             <span className="font-extrabold text-2xl tracking-tight text-foreground">TrackWA</span>
           </Link>
           <p className="text-muted-foreground text-sm leading-relaxed mb-8 max-w-sm">
