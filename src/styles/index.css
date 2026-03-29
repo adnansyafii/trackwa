@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 99%;
+    --foreground: 160 10% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 160 10% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 10% 12%;
+
+    --primary: 160 59% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --primary-light: 160 50% 95%;
+    --primary-glow: 160 65% 52%;
+
+    --secondary: 150 10% 96%;
+    --secondary-foreground: 160 10% 20%;
+
+    --muted: 150 10% 96%;
+    --muted-foreground: 160 6% 50%;
+
+    --accent: 160 50% 92%;
+    --accent-foreground: 160 59% 30%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 150 12% 90%;
+    --input: 150 12% 90%;
+    --ring: 160 59% 45%;
+
+    --radius: 0.75rem;
+
+    --section-alt: 150 15% 97%;
+    --highlight: 42 100% 55%;
+    --highlight-foreground: 42 90% 15%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+  }
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(142 70% 32%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .section-alt {
+    background-color: hsl(var(--section-alt));
+  }
+}
